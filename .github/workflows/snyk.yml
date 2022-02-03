@@ -13,4 +13,4 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           args: --all-projects
-          command: monitor --target-reference=${{ github.ref.name }}
+          command: monitor --target-reference=${{ github.ref_name }}
